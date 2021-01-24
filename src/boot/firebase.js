@@ -3,18 +3,17 @@ import 'firebase/auth'
 
 export default async ({ store }) => {
   const config = {
-    apiKey: 'AIzaSyCJ752KMIQ4gNCnD5kRyc3Xcbnhfo4hj5o',
-    authDomain: 'vuexfire-bug.firebaseapp.com',
-    databaseURL: 'https://vuexfire-bug.firebaseio.com',
-    projectId: 'vuexfire-bug',
-    storageBucket: 'vuexfire-bug.appspot.com',
-    messagingSenderId: '866764616081',
-    appId: '1:866764616081:web:df0ecc6295a2f1d326ea30'
+    apiKey: 'AIzaSyDg75VnXtWV5ih20zRV57qQEwtCyrN-j54',
+    authDomain: 'q-vuex-fire-bug.firebaseapp.com',
+    projectId: 'q-vuex-fire-bug',
+    storageBucket: 'q-vuex-fire-bug.appspot.com',
+    messagingSenderId: '773150747505',
+    appId: '1:773150747505:web:5d75dea067d4519ebaa4d0'
   }
 
   firebase.initializeApp(config)
 
   // debugger
-  await store.dispatch('users/getCurrentUser')
+  // await store.dispatch('users/getCurrentUser')
   // debugger
 }

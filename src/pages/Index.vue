@@ -9,7 +9,7 @@ import { mapActions } from 'vuex'
 export default {
   name: 'PageIndex',
   async mounted () {
-    // debugger
+    debugger
     await this.getUsers()
     const usersFromState = this.$store.state.users.usersCollection
     console.log(usersFromState.length)
