@@ -11,9 +11,7 @@ export default async ({ store }) => {
     appId: '1:773150747505:web:5d75dea067d4519ebaa4d0'
   }
 
-  firebase.initializeApp(config)
+  await firebase.initializeApp(config)
 
-  // debugger
-  // await store.dispatch('users/getCurrentUser')
   // debugger
 }

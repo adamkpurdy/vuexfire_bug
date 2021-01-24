@@ -11,11 +11,13 @@ export default {
   async mounted () {
     debugger
     await this.getUsers()
+    await this.getCurrentUser()
     const usersFromState = this.$store.state.users.usersCollection
     console.log(usersFromState.length)
+    console.log(this.$store.state.users.currentUser)
   },
   methods: {
-    ...mapActions('users', ['getUsers'])
+    ...mapActions('users', ['getCurrentUser', 'getUsers'])
   }
 }
 </script>
