@@ -13,8 +13,8 @@ export default {
     await this.getUsers()
     await this.getCurrentUser()
     const usersFromState = this.$store.state.users.usersCollection
-    console.log(usersFromState.length)
-    console.log(this.$store.state.users.currentUser)
+    console.group('FIRESTORE USERS COLLECTION LENGTH:', usersFromState.length)
+    console.group('CURRENT USER IN STATE', this.$store.state.users.currentUser)
   },
   methods: {
     ...mapActions('users', ['getCurrentUser', 'getUsers'])

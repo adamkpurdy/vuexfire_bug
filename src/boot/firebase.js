@@ -1,7 +1,7 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
 
-export default async ({ store }) => {
+export default async () => {
   const config = {
     apiKey: 'AIzaSyDg75VnXtWV5ih20zRV57qQEwtCyrN-j54',
     authDomain: 'q-vuex-fire-bug.firebaseapp.com',
@@ -11,7 +11,5 @@ export default async ({ store }) => {
     appId: '1:773150747505:web:5d75dea067d4519ebaa4d0'
   }
 
-  await firebase.initializeApp(config)
-
-  // debugger
+  firebase.initializeApp(config)
 }
